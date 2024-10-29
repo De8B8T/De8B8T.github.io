@@ -64,7 +64,7 @@ ul {
 }
 
 .social-container {
-  text-align: center;
+  text-align: center; /* Center the social section */
 }
 
 /* Improved Link Styles */
