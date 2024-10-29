@@ -1,5 +1,6 @@
 document.querySelectorAll('.faq-item').forEach(item => {
   item.querySelector('.question').addEventListener('click', () => {
-    item.classList.toggle('active');
+    const answer = item.querySelector('.answer');
+    answer.classList.toggle('active');
   });
 });
