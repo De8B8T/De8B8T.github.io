@@ -63,30 +63,8 @@ ul {
   padding-left: 20px;
 }
 
-.social-container {
-  text-align: center;
-}
-
-.discord-link {
-  display: inline-block;
-  background-color: #007ACC;
-  color: #FFFFFF;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  transition: background-color 0.3s, transform 0.3s;
-  font-weight: bold;
-}
-
-.discord-link:hover {
-  background-color: #005A9E;
-  transform: translateY(-2px);
-}
-
 .faq-container {
-  width: 90%;
-  max-width: 800px;
-  margin: 20px auto;
+  width: 100%;
 }
 
 .faq-item {
