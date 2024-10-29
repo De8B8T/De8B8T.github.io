@@ -61,17 +61,17 @@ ul {
 }
 
 .social-container {
-  text-align: center; /* Center the social section */
+  text-align: center;
 }
 
 .styled-link {
-  color: #80CBC4; /* Light teal color for the link */
-  text-decoration: none; /* Remove the default underline */
-  border-bottom: 1px solid #80CBC4; /* Underline effect on hover */
-  transition: color 0.3s, border-bottom 0.3s; /* Smooth transition */
+  color: #80CBC4;
+  text-decoration: none;
+  border-bottom: 1px solid #80CBC4;
+  transition: color 0.3s, border-bottom 0.3s;
 }
 
 .styled-link:hover {
-  color: #4DB6AC; /* Darker teal on hover */
-  border-bottom: 1px solid transparent; /* Removes the underline on hover */
+  color: #4DB6AC;
+  border-bottom: 1px solid transparent;
 }
