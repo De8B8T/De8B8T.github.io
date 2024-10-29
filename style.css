@@ -46,53 +46,32 @@ nav a:hover {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 }
 
-h1 {
-  text-align: center;
-  margin-bottom: 20px;
+h1, h2 {
   color: #E0E0E0;
+  margin-bottom: 10px;
 }
 
-.faq-container {
-  border-top: 1px solid #333;
+p {
+  margin-bottom: 15px;
 }
 
-.faq-item {
-  border-bottom: 1px solid #333;
-  padding: 15px 0;
+ul {
+  margin: 10px 0;
+  padding-left: 20px;
 }
 
-.question {
-  cursor: pointer;
-  font-size: 1.1em;
-  color: #80CBC4;
-  transition: color 0.2s ease;
-}
-
-.question:hover {
-  color: #4DB6AC;
-}
-
-.answer {
-  max-height: 0;
-  overflow: hidden;
-  color: #E0E0E0;
-  padding-top: 10px;
-  transition: max-height 0.3s ease;
-}
-
-.faq-item.active .answer {
-  max-height: 100px;
+.social-container {
+  text-align: center; /* Center the social section */
 }
 
 .styled-link {
-  color: #80CBC4;
-  text-decoration: none;
-  border-bottom: 1px solid #80CBC4;
-  transition: color 0.3s, border-bottom 0.3s;
+  color: #80CBC4; /* Light teal color for the link */
+  text-decoration: none; /* Remove the default underline */
+  border-bottom: 1px solid #80CBC4; /* Underline effect on hover */
+  transition: color 0.3s, border-bottom 0.3s; /* Smooth transition */
 }
 
 .styled-link:hover {
-  color: #4DB6AC;
-  border-bottom: 1px solid transparent;
+  color: #4DB6AC; /* Darker teal on hover */
+  border-bottom: 1px solid transparent; /* Removes the underline on hover */
 }
-
