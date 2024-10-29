@@ -64,30 +64,30 @@ ul {
 }
 
 .social-container {
-  text-align: center;
+  text-align: center; /* Center the social section */
 }
 
-.discord-link {
+/* Improved Link Styles */
+.link {
   display: inline-block;
   background-color: #007ACC;
   color: #FFFFFF;
-  padding: 10px 20px;
+  padding: 10px 15px;
   border-radius: 5px;
   text-decoration: none;
   transition: background-color 0.3s, transform 0.3s;
   font-weight: bold;
+  margin: 10px 0; /* Add some margin for spacing */
 }
 
-.discord-link:hover {
+.link:hover {
   background-color: #005A9E;
   transform: translateY(-2px);
 }
 
 /* FAQ Styles */
 .faq-container {
-  width: 90%;
-  max-width: 800px;
-  margin: 20px auto;
+  width: 100%;
 }
 
 .faq-item {
@@ -117,17 +117,3 @@ ul {
 .answer.active {
   display: block;
 }
-
-p {
-  margin-bottom: 15px;
-}
-
-ul {
-  margin: 10px 0;
-  padding-left: 20px;
-}
-
-.social-container {
-  text-align: center; /* Center the social section */
-}
-
