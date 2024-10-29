@@ -12,28 +12,31 @@ body {
 
 nav {
   background-color: #1E1E1E;
-  padding: 10px;
+  padding: 10px 0;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 nav ul {
   display: flex;
-  list-style: none;
   justify-content: center;
+  list-style: none;
 }
 
 nav ul li {
-  margin: 0 15px;
+  margin: 0 20px;
 }
 
 nav a {
   text-decoration: none;
   color: #B0BEC5;
-  transition: color 0.2s;
+  padding: 5px 10px;
+  transition: color 0.2s, background-color 0.2s;
+  border-radius: 5px;
 }
 
 nav a:hover {
-  color: #80CBC4;
+  color: #FFFFFF;
+  background-color: #007ACC;
 }
 
 .container {
@@ -64,14 +67,18 @@ ul {
   text-align: center;
 }
 
-.styled-link {
-  color: #80CBC4;
+.discord-link {
+  display: inline-block;
+  background-color: #007ACC;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border-radius: 5px;
   text-decoration: none;
-  border-bottom: 1px solid #80CBC4;
-  transition: color 0.3s, border-bottom 0.3s;
+  transition: background-color 0.3s, transform 0.3s;
+  font-weight: bold;
 }
 
-.styled-link:hover {
-  color: #4DB6AC;
-  border-bottom: 1px solid transparent;
+.discord-link:hover {
+  background-color: #005A9E;
+  transform: translateY(-2px);
 }
