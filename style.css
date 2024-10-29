@@ -82,3 +82,37 @@ ul {
   background-color: #005A9E;
   transform: translateY(-2px);
 }
+
+.faq-container {
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.faq-item {
+  margin-bottom: 15px;
+  background-color: #2A2A2A;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.question {
+  padding: 10px;
+  background-color: #1E1E1E;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.question:hover {
+  background-color: #007ACC;
+}
+
+.answer {
+  display: none;
+  padding: 10px;
+  background-color: #2A2A2A;
+}
+
+.answer.active {
+  display: block;
+}
