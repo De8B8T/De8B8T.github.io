@@ -64,10 +64,10 @@ ul {
 }
 
 .social-container {
-  text-align: center; /* Center the social section */
+  text-align: center;
 }
 
-/* Improved Link Styles */
+
 .link {
   display: inline-block;
   background-color: #007ACC;
@@ -77,7 +77,7 @@ ul {
   text-decoration: none;
   transition: background-color 0.3s, transform 0.3s;
   font-weight: bold;
-  margin: 10px 0; /* Add some margin for spacing */
+  margin: 10px 0;
 }
 
 .link:hover {
@@ -85,7 +85,6 @@ ul {
   transform: translateY(-2px);
 }
 
-/* FAQ Styles */
 .faq-container {
   width: 100%;
 }
