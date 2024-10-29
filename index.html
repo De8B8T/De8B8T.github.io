@@ -8,12 +8,20 @@
 </head>
 <body>
   <div class="container">
-    <h1>My Personal FAQ</h1>
-    <div class="faq-container" id="faq-container"></div>
-    <div class="new-question">
-      <input type="text" id="question-input" placeholder="Does DeBot log coordinates?" />
-      <textarea id="answer-input" placeholder="Well no but you can always try a random location if you don't trust it."></textarea>
-      <button onclick="addQuestion()">Add Question</button>
+    <h1>DeBot FAQ</h1>
+    <div class="faq-container" id="faq-container">
+      <div class="faq-item">
+        <h3 class="question">Does DeBot log coordinates?</h3>
+        <p class="answer">No, but feel free to use a random location.</p>
+      </div>
+      <div class="faq-item">
+        <h3 class="question">Is my data stored permanently?</h3>
+        <p class="answer">Data is stored temporarily and is automatically deleted after 24 hours.</p>
+      </div>
+      <div class="faq-item">
+        <h3 class="question">Can I access my data offline?</h3>
+        <p class="answer">No, data access requires an internet connection.</p>
+      </div>
     </div>
   </div>
   <script src="script.js"></script>
