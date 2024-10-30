@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CMDS - DeBot Commands</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="help.html">Commands</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <h1>Frequently Asked Questions</h1>
+    <div class="faq-container" id="faq-container">
+      <div class="faq-item">
+      <h3 class="question">-info</h3>
+      <p class="answer">Displays information about the bot, including the number of successful deliveries.</p>
+      </div>
+      <div class="faq-item">
+        <h3 class="question">-cmds</h3>
+        <p class="answer">Provides a small list of available commands.</p>
+      </div>
+      <div class="faq-item">
+        <h3 class="question">-kit [name]</h3>
+        <p class="answer">Delivers a fast kit based on the specified name. Aliases available. <br><br> e.g. -kit pvp</p>
+      </div>
+      <div class="faq-item">
+        <h3 class="question">-kithelp [pvp/build/misc]</h3>
+        <p class="answer">Displays available kits based on the category:<br>
+          <strong>PVP:</strong> pvp, cpvp, hpvp, xp, refill, amrefill<br>
+          <strong>Build:</strong> wood, stone, nether, concrete, dupe, redstone<br>
+          <strong>Misc:</strong> elytra<br><br>
+          e.g. -kithelp pvp
+        </p>
+      </div>
+      <div class="faq-item">
+        <h3 class="question">-fact</h3>
+        <p class="answer">Private messages you a random fact from the API.</p>
+      </div>
+      <div class="faq-item">
+        <h3 class="question">-quote</h3>
+        <p class="answer">Private messages you a random quote from the API.</p>
+      </div>
+      <div class="faq-item">
+        <h3 class="question">-flip</h3>
+        <p class="answer">Private messages you a random side of a coin (heads/tails).</p>
+      </div>
+      <div class="faq-item">
+        <h3 class="question">-roll [num1] [num2]</h3>
+        <p class="answer">Private messages you a random number from [num1] to [num2] (like rolling a dice). <br><br> e.g. -roll 1 6</p>
+      </div>
+      <div class="faq-item">
+        <h3 class="question">-is [username]</h3>
+        <p class="answer">Checks if a player is online or offline based on their username. <br><br> e.g. -is PlayerOne</p>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
