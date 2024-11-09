@@ -25,10 +25,6 @@ nav ul {
   gap: 20px;
 }
 
-nav ul li {
-  position: relative;
-}
-
 nav a {
   color: #B0BEC5;
   text-decoration: none;
@@ -78,17 +74,7 @@ p {
   will-change: transform;
 }
 
-@keyframes changelogFade {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
+/* Changelog Styles */
 .changelog {
   margin-top: 30px;
 }
@@ -128,33 +114,17 @@ p {
   display: block;
 }
 
-.table {
-  width: 100%;
-  margin-top: 20px;
-  border-collapse: collapse;
+@keyframes changelogFade {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.table th, .table td {
-  border: 1px solid #333;
-  padding: 12px;
-  color: #FFF;
-}
-
-.table th {
-  background-color: #333;
-}
-
-.table tr:hover {
-  background-color: #3B3B5D;
-}
-
-/* Mouse-following banner */
-.banner-follow {
-  transform-origin: center;
-  perspective: 800px;
-}
-
-/* Smooth animations */
 .smooth-transform {
   transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
 }
