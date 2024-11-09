@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -14,6 +13,10 @@
       <li><a href="help.html">Commands</a></li>
     </ul>
   </nav>
+
+  <!-- Floating banner that follows the cursor -->
+  <div class="banner banner-follow"></div>
+
   <div class="container">
     <h1>Welcome to DeBot's Website</h1>
     <p>This website is an expansion of DeBot allowing you to see information about it.</p>
@@ -28,12 +31,24 @@
     <p>DeBot is a powerful robot delivering kits and executing commands, from quotes to facts, created by DIZZY.</p>
   </div>
 
-  <div class="container">
-    <h1>Version 2.2</h1>
-    <p>+ Added MANY commands</p>
-    <p>+ Fixed bot not delivering (to a certain extent)</p>
+  <div class="container changelog">
+    <h1>Changelog</h1>
+    <div class="changelog-item" onclick="toggleContent(this)">
+      <div class="changelog-header">Version 2.2 <span>&#9662;</span></div>
+      <div class="changelog-content">
+        <p>+ Added MANY commands</p>
+        <p>+ Fixed bot not delivering (to a certain extent)</p>
+      </div>
+    </div>
+    <div class="changelog-item" onclick="toggleContent(this)">
+      <div class="changelog-header">Version 2.1 <span>&#9662;</span></div>
+      <div class="changelog-content">
+        <p>+ Minor bug fixes</p>
+        <p>+ Improved performance</p>
+      </div>
+    </div>
   </div>
-  
+
   <script src="script.js"></script>
 </body>
 </html>
