@@ -6,25 +6,25 @@
 }
 
 body {
-  background-color: #121212;
-  color: #E0E0E0;
-  animation: bgGlow 7s ease-in-out infinite alternate;
+  background-color: #0D0D0D;
+  color: #E6E6FA;
+  animation: bgPulse 7s ease-in-out infinite alternate;
 }
 
-@keyframes bgGlow {
+@keyframes bgPulse {
   0% {
-    background-color: #121212;
+    background-color: #0D0D0D;
   }
   100% {
-    background-color: #1b1b1b;
+    background-color: #1A1A1A;
   }
 }
 
 nav {
-  background-color: #1a1a1a;
+  background: linear-gradient(145deg, #1a1a2e, #1e1e33);
   padding: 15px 0;
-  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
-  border-bottom: 2px solid #333;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.15);
+  border-bottom: 1px solid #333;
 }
 
 nav ul {
@@ -39,29 +39,29 @@ nav ul li {
 
 nav a {
   text-decoration: none;
-  color: #B0BEC5;
-  padding: 10px 15px;
-  border-radius: 8px;
-  transition: color 0.3s, background-color 0.3s, transform 0.3s;
+  color: #A9A9C3;
+  padding: 7px 12px;
+  border-radius: 6px;
+  transition: color 0.2s, background-color 0.2s, transform 0.3s;
   position: relative;
 }
 
 nav a:hover {
   color: #FFF;
-  background-color: #6200ea;
-  box-shadow: 0 0 20px #6200ea, 0 0 10px #6200ea inset;
+  background-color: #3944BC;
+  box-shadow: 0 0 15px #3944BC, 0 0 8px #3944BC inset;
   transform: scale(1.05);
 }
 
 .container {
   width: 90%;
   max-width: 800px;
-  margin: 40px auto;
+  margin: 30px auto;
   padding: 25px;
-  background-color: #1c1c1c;
+  background: rgba(30, 30, 50, 0.85);
   border-radius: 12px;
-  box-shadow: 0 10px 40px rgba(255, 255, 255, 0.3);
-  animation: containerFade 1.5s ease-in-out;
+  box-shadow: 0 12px 30px rgba(255, 255, 255, 0.15);
+  animation: containerFade 1.2s ease-in-out;
 }
 
 @keyframes containerFade {
@@ -78,16 +78,15 @@ nav a:hover {
 h1, h2 {
   color: #FFF;
   margin-bottom: 12px;
-  text-shadow: 0 0 12px #fff, 0 0 30px rgba(255, 255, 255, 0.5);
-  animation: textGlow 3s ease-in-out infinite alternate;
+  animation: textPulse 2.5s ease-in-out infinite alternate;
 }
 
-@keyframes textGlow {
+@keyframes textPulse {
   0% {
-    text-shadow: 0 0 15px #FFFFFF, 0 0 30px #6200ea;
+    text-shadow: 0 0 12px #FFFFFF;
   }
   100% {
-    text-shadow: 0 0 30px #FFFFFF, 0 0 60px #6200ea;
+    text-shadow: 0 0 25px #FFFFFF;
   }
 }
 
@@ -107,16 +106,16 @@ ul {
 
 .link {
   display: inline-block;
-  background-color: #6200ea;
+  background: linear-gradient(135deg, #3944BC, #4C51C6);
   color: #FFF;
   padding: 12px 18px;
   border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
-  margin: 15px 0;
+  margin: 12px 0;
   position: relative;
   overflow: hidden;
-  transition: background-color 0.3s, transform 0.3s ease;
+  transition: background 0.4s, transform 0.4s;
 }
 
 .link::before {
@@ -126,9 +125,9 @@ ul {
   left: -50%;
   width: 200%;
   height: 200%;
-  background: rgba(98, 0, 234, 0.6);
+  background: rgba(60, 80, 240, 0.35);
   transform: rotate(45deg);
-  transition: transform 0.4s;
+  transition: transform 0.6s;
   z-index: -1;
 }
 
@@ -137,9 +136,9 @@ ul {
 }
 
 .link:hover {
-  background-color: #3700b3;
-  transform: translateY(-5px);
-  box-shadow: 0 0 20px #3700b3, 0 0 30px #3700b3;
+  background: linear-gradient(135deg, #3b53d0, #5569f5);
+  transform: translateY(-3px);
+  box-shadow: 0 0 12px #3b53d0, 0 0 25px #3b53d0;
 }
 
 .faq-container {
@@ -147,36 +146,36 @@ ul {
 }
 
 .faq-item {
-  margin-bottom: 20px;
-  background-color: #2a2a2a;
-  border-radius: 8px;
+  margin-bottom: 18px;
+  background-color: #292940;
+  border-radius: 7px;
   overflow: hidden;
-  transition: all 0.4s ease;
+  transition: transform 0.4s ease;
 }
 
 .question {
   padding: 12px;
-  background-color: #1e1e1e;
+  background-color: #202038;
   cursor: pointer;
-  transition: background-color 0.2s, box-shadow 0.2s;
-  color: #fff;
+  transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 .question:hover {
-  background-color: #6200ea;
-  box-shadow: 0 0 15px #6200ea;
-  color: #fff;
+  background-color: #3944BC;
+  box-shadow: 0 0 15px #3944BC;
+  color: #FFF;
 }
 
 .answer {
   display: none;
   padding: 12px;
-  background-color: #333;
+  background-color: #33334D;
+  border-top: 1px solid #444;
 }
 
 .answer.active {
   display: block;
-  animation: fadeIn 0.5s ease-in-out;
+  animation: fadeIn 0.6s ease-in-out;
 }
 
 @keyframes fadeIn {
@@ -189,46 +188,45 @@ ul {
 }
 
 .kit-tables {
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 20px;
-  animation: tableGlow 4s infinite alternate;
+  margin-top: 15px;
+  animation: tableGlow 4s ease-in-out infinite alternate;
 }
 
 @keyframes tableGlow {
   0% {
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 12px #282846;
   }
   100% {
-    box-shadow: 0 0 25px #6200ea;
+    box-shadow: 0 0 25px #3944BC;
   }
 }
 
 th, td {
-  border: 1px solid #444;
-  padding: 14px;
+  border: 1px solid #45455A;
+  padding: 15px;
   text-align: left;
-  color: #fff;
+  color: #D3D3E7;
 }
 
 th {
-  background-color: #333;
-  color: #fff;
+  background: rgba(40, 40, 70, 0.9);
   font-weight: bold;
 }
 
 tbody tr:hover {
-  background-color: #444;
-  transition: background-color 0.3s ease;
-  box-shadow: inset 0 0 15px rgba(255, 255, 255, 0.1);
+  background-color: #3B3B5D;
+  transition: background-color 0.4s ease;
+  box-shadow: inset 0 0 12px rgba(255, 255, 255, 0.25);
 }
 
 h4 {
   margin-top: 25px;
-  color: #fff;
-  animation: textGlow 3s ease-in-out infinite alternate;
+  color: #FFF;
+  animation: textPulse 2.5s ease-in-out infinite alternate;
 }
